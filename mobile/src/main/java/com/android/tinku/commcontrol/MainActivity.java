@@ -35,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent startNEwActivityIntent = new Intent(this,test_joy.class);
+        startActivity(startNEwActivityIntent);
+
         Intent startUdpService = new Intent(this, UdpService.class);
 
         Prefs = getSharedPreferences(ApplicationConstants.ApplicationPrefs,Context.MODE_PRIVATE);
